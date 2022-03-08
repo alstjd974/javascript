@@ -1,20 +1,28 @@
-/*
-const mon = "mon";
-const tue = "tue";
-const wed = "wed";
-const thu = "thu";
-const fri = "fri";
-const sta = "sta";
-const sun = "sun";
-const dayofweek = {mon,tue,wed,thu,fri,sta,sun};
+/*  //game
+const playerName = "alstjd974"
+const playerPoints = 1212;
+const playerFat = true;
 */
 
-const daysOfweek = ["mon", "tue", "wed", "thu", "fri", "sta"];
+/*
+// array(배열)로 특성을 정리할 경우 의미를 알지 못한다.
+const player = ["alstjd974", 1212, true];
 
-// Get Item from Array
-console.log(daysOfweek);
-console.log(daysOfweek[4]);
+console.log(player);
+*/
 
-// Add one more day to the array
-daysOfweek.push("sun");
-console.log(daysOfweek);
+//object
+const player = {
+    name : "alstjd974", // proerty(특성)
+    points : 10,
+    fat : true,
+};
+
+console.log(player);
+console.log(player.name); // = player["name"]
+// constant는 수정이 불가능 / object 안의 무언가는 수정,업데이트가 가능하다. 
+player.fat = false;
+player.lastName = "Lee"
+player.points = player.points + 15;
+console.log(player);
+
