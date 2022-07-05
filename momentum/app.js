@@ -1,28 +1,10 @@
-/*  //game
-const playerName = "alstjd974"
-const playerPoints = 1212;
-const playerFat = true;
-*/
+function sayHello(nameOfPerson, age) { 
+    console.log("Hello my name is " + nameOfPerson + " and I'm " + age);
+}
 
-/*
-// array(ë°°ì—´)ë¡œ íŠ¹ì„±ì„ ì •ë¦¬í•  ê²½ìš° ì˜ë¯¸ë¥¼ ì•Œì§€ ëª»í•œë‹¤.
-const player = ["alstjd974", 1212, true];
 
-console.log(player);
-*/
+sayHello("min",10);
+sayHello("sung",20);
 
-//object
-const player = {
-    name : "alstjd974", // proerty(íŠ¹ì„±)
-    points : 10,
-    fat : true,
-};
-
-console.log(player);
-console.log(player.name); // = player["name"]
-// constantëŠ” ìˆ˜ì •ì´ ë¶ˆê°€ëŠ¥ / object ì•ˆì˜ ë¬´ì–¸ê°€ëŠ” ìˆ˜ì •,ì—…ë°ì´íŠ¸ê°€ ê°€ëŠ¥í•˜ë‹¤. 
-player.fat = false;
-player.lastName = "Lee"
-player.points = player.points + 15;
-console.log(player);
-
+// functionÀº ¾î¶² ÄÚµå¸¦ Ä¸½¶È­ÇØ¼­, ½ÇÇàÀ» ¿©·¯ ¹ø ÇÒ ¼ö ÀÖ°Ô ÇØÁØ´Ù.
+// argument(ÀÎ¼ö)´Â, funtionÀ» ½ÇÇàÇÏ´Â µ¿¾È ¾î¶² Á¤º¸¸¦ function¿¡°Ô º¸³¾ ¼ö ÀÖ´Â ¹æ¹ı
