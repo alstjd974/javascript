@@ -1,24 +1,20 @@
-function plus(firstNumber, secondNumber){
-    console.log(firstNumber + secondNumber);
-    //firstNumber = 2 secondNumber = 3
-}
-
-function divide (a,b){
-    console.log(a/b);
-    // a = 80 b = 25
-}
-
-plus(2 , 3);
-divide(80,25);
-
-const player = {
-    name: "min sung",
-    sayHello : function(otherPersonName){
-        console.log("Hello " + otherPersonName + " nice to meet you!");
+const calulator = {
+    add : function(a,b) {
+        console.log(a+b);
+    },
+    sub : function(a,b) {
+        console.log(a-b);
+    },
+    div : function(a,b) {
+        console.log(a/b);
+    },
+    pow : function(a,b) {
+        console.log(a**b);
     }
+
 };
 
-console.log(player.name);
-player.sayHello("Lee");
-player.sayHello("min");
-
+calulator.add(2,4);
+calulator.sub(2,4);
+calulator.div(2,4);
+calulator.pow(2,4);
