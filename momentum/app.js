@@ -1,20 +1,26 @@
-const calulator = {
+const calculator = {
     add : function(a,b) {
-        console.log(a+b);
+         a+b;
     },
-    sub : function(a,b) {
-        console.log(a-b);
+    minus : function(a,b) {
+        return a-b;
     },
     div : function(a,b) {
-        console.log(a/b);
+        return a/b;
     },
     pow : function(a,b) {
-        console.log(a**b);
+        return a**b;
     }
 
 };
 
-calulator.add(2,4);
-calulator.sub(2,4);
-calulator.div(2,4);
-calulator.pow(2,4);
+const addResult = calculator.add(10,4);
+const minusResult = calculator.minus(addResult,2);
+const divResult = calculator.div(minusResult,2);
+const powResult = calculator.pow(divResult,2);
+
+console.log(calculator.add(2,2));
+// console.log(addResult);
+// console.log(minusResult);
+// console.log(divResult);
+// console.log(powResult);
