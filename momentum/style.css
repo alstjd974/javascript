@@ -10,3 +10,7 @@ h1 {
 .clicked {
   color: tomato;
 }
+
+.sexy-font {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
