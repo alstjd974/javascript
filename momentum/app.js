@@ -1,7 +1,15 @@
-const h1 = document.querySelector(".hello h1");
+const loginInput = document.querySelector("#login-form input");
+const loginBtn = document.querySelector("#login-form button");
 
-function handleTitleClick() {
-  h1.classList.toggle("clicked");
+function onLoginBtn() {
+  const username = loginInput.value;
+  if (username === "") {
+    alert("please write your name.");
+  } else if (username.length > 15) {
+    alert("your name is too long");
+  } else {
+    console.log("Hello", username);
+  }
 }
 
-h1.addEventListener("click", handleTitleClick);
+loginBtn.addEventListener("click", onLoginBtn);
