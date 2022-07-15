@@ -1,12 +1,18 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 
+const link = document.querySelector("a");
+
 function onLoginSubmit(event) {
-  //Provide an event object as an argument
   event.preventDefault();
-  //Prevents the default action.
   console.log(loginInput.value);
 }
 
+function handleLinkClick(event) {
+  event.preventDefault();
+  console.dir(event);
+  alert("clicked!");
+}
+
 loginForm.addEventListener("submit", onLoginSubmit);
-// JS calls onLoginSubmit function when submit event occurs
+link.addEventListener("click", handleLinkClick);
